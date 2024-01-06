@@ -21,8 +21,11 @@
   box-sizing: border-box;
   color: hsl(0, 0%, 100%);
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
 
-.desktop {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,15 +33,49 @@
   background-color: hsl(233, 47%, 7%);
 }
 
-.card {
-  display: flex;
-  flex-direction: row;
-  width: 1110px;
-  background-color: hsl(244, 38%, 16%);
-  border-radius: 7px;
+.img {
+  margin-bottom: 10px;
+  background-image: url(images/image-header-mobile.jpg);
+  border-radius: 0 7px 7px 0;
 }
 
-.img-desk {
-  border-radius: 0 7px 7px 0;
-  filter: hsl(277, 64%, 61%)(70%);
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 1em;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 7px;
+  padding: 25px;
 }
+
+.card-title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.card-title > span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.stats-heading {
+  margin: 25px;
+}
+
+
+.stats-heading > span{
+  display: block;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
