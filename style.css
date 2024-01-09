@@ -21,32 +21,51 @@
   box-sizing: border-box;
   color: hsl(0, 0%, 100%);
 }
+
 body {
   font-family: 'Inter', sans-serif;
+  background-color: hsl(233, 47%, 7%);
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: hsl(233, 47%, 7%);
+  height: 100%;
+  margin: 2rem;
+  flex-wrap: wrap-reverse;
 }
 
+
 .img {
-  margin-bottom: 10px;
+  position: relative;
+  height: 240px;
+  min-width: 327px;
   background-image: url(images/image-header-mobile.jpg);
-  border-radius: 0 7px 7px 0;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0 1em;
+  margin: 0 1.5em;
   background-color: hsl(244, 38%, 16%);
-  border-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  max-height: 540px;
+  height: 540px; 
+  min-width: 327px;
+  width: 327px;
+}
+
+.text {
   padding: 25px;
+  
 }
 
 .card-title {
