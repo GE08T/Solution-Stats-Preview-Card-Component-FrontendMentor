@@ -37,18 +37,6 @@ main {
 }
 
 
-.img {
-  position: relative;
-  height: 240px;
-  min-width: 327px;
-  background-image: url(images/image-header-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -65,12 +53,12 @@ main {
 
 .text {
   padding: 25px;
-  
+  max-height: 540px;
 }
 
 .card-title {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 1.7em;
+  margin-bottom: 18px;
 }
 
 .card-title > span {
@@ -79,22 +67,45 @@ main {
 
 .card-desc {
   color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.938rem;
   font-family: 'Lexend Deca', sans-serif;
-  margin-bottom: 50px;
-  font-weight: 400;
+  margin-bottom: 35px;
+  line-height: 1.7;
 }
 
 .stats-heading {
   margin: 25px;
 }
 
-
 .stats-heading > span{
   display: block;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 0.875rem;
+  padding: 10px;
   text-transform: uppercase;
 }
 
+.overlay {
+  position: relative;
+  height: 240px;
+  min-width: 327px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: hsl(277, 64%, 61%);
+}
+
+.img {
+  position: relative;
+  height: 240px;
+  min-width: 327px;
+  background-image: url(images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
