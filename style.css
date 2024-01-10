@@ -36,7 +36,6 @@ section {
   flex-wrap: wrap-reverse;
 }
 
-
 .card {
   display: flex;
   flex-direction: column;
@@ -51,7 +50,7 @@ section {
 }
 
 .text {
-  padding: 25px;
+  padding: 35px 25px 30px 25px;
   max-height: 540px;
 }
 
@@ -68,22 +67,26 @@ section {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 0.938rem;
   font-family: 'Lexend Deca', sans-serif;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   line-height: 1.7;
 }
 
 .stats-heading {
-  margin: 25px;
+  margin: 20px;
 }
 
 .stats-heading > span{
   display: block;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.6);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   padding: 10px;
   text-transform: uppercase;
+}
+
+.stats-heading > span:last-child {
+  padding-bottom: 10px;
 }
 
 .overlay {
@@ -111,10 +114,27 @@ section {
   .card {
     max-width: 570px;
     max-height: 446px;
-    height: 446px;
+    height: 436px;
     width: 570px;
     margin: 0;
     border-radius: 7px 0 0 7px;
+  }
+  .text {
+    padding-top: 60px;
+    padding-left: 70px;
+  }
+
+  .card-title {
+    font-size: 2.438em;
+    text-align: left;
+    margin: 0 0 27px;
+    width: 91%;
+  }
+  
+  .card-desc {
+    text-align: left;
+    margin: 0 0 70px;
+    width: 80%;
   }
 
   .text {
@@ -122,7 +142,7 @@ section {
   }
 
   .overlay {
-    height: 446px;
+    height: 436px;
     width: 540px;
     border-radius: 0 7px 7px 0;
   }
@@ -136,7 +156,86 @@ section {
   .card-stats {
     display: flex;
     flex-direction: row;
+    width: 80%;
     justify-content: space-between;
+    row-gap: 20px;
+    text-align: left;
+  }
+
+  .stats-heading {
+    margin: 0;
+  }
+
+  .stats-heading > span {
+    padding: 10px 0 0 0;
+  }
+
+  section {
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 1139px) {
+  .card {
+    height: 236px;
+    width: 370px;
+    margin: 0;
+    border-radius: 7px 0 0 7px;
+  }
+
+  .text {
+    padding-top: 30px;
+    padding-left: 35px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    text-align: left;
+    margin: 0 0 27px;
+    width: 90%;
+  }
+  
+  .card-desc {
+    font-size: 0.7rem;
+    text-align: left;
+    margin: 0 0 25px;
+    width: 80%;
+  }
+
+  .text {
+    max-height: 236px;
+  }
+
+  .overlay {
+    height: 236px;
+    width: 340px;
+    border-radius: 0 7px 7px 0;
+  }
+
+  .img {
+    height: 236px;
+    width: 340px;
+    border-radius: 0 7px 7px 0;
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    row-gap: 20px;
+    text-align: left;
+  }
+
+  .stats-heading {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  
+  .stats-heading > span {
+    font-size: 0.6em;
+    padding: 5px 0 0 0;
   }
 
   section {
